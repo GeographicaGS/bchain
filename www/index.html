@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>bChain business solution</title>
-<meta name="Author" content="Geographica GS">
-<meta name="language" content="es-ES">
+<meta name="Author" content="Geographica GS" />
+<meta name="language" content="es-ES" />
 <meta name="keywords" content="b2b, bchance, gestión integral, proceso comercial, distribuidora" />
-
 <meta name="description" content="Plataforma web para la gestión integral del proceso comercial de una distribuidora. Empezando por la petición online de los clientes hasta el envío de los pedidos desde el almacén. Control de productos, proveedores, clientes, estadísticas de ventas y facturación, generación de facturas, seguimiento en tiempo real por parte del cliente, generación de newsletters basados en novedades, seguimiento e historial de relaciones con el cliente, control automático de suscripciones, descuentos personalizados. Administración de perfiles, seguridad HTTPS, importación y exportación de información." />
 
 <link rel="stylesheet" href="css/reset.css" />
@@ -15,87 +15,67 @@
 
 <link rel="icon" type="image/png" href="images/bchain_favicon.png"/>
 
-
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/nbw-parallax.js"></script>
 <script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
 <script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
 <script type="text/javascript" src="scripts/jquery.inview.js"></script>
 
-
-<script type="text/javascript">
-
-
-$(document).ready(function(){
-	$("ul.menu a,a[href='#six']").click(function(){
-	
-		$('html, body').animate({
-			scrollTop: $($(this).attr("href")).offset().top - $("#nav").outerHeight(true) - $("#cabecera").height()
-		}, 1000);
-		//$("#nav").css("top",0);
-		$('#nav').animate({
-			top:0,
-		  }, 500, function() {
-			$("#nav").removeClass("menuNominal").addClass("menuTop");
-	  	});
-		
-
-
-	});
-	
-	$("#subir").click(function(){
-		$("#nav").removeClass("menuTop");	
-
-		$('html, body').animate({
-			scrollTop:0
-		}, 1000,function(){
-		});
-	});
-	
-	$(window).bind('scroll',function(){ 
-		
-		if ($(window).scrollTop() > 453){
-			$("#nav").removeClass("menuNominal").addClass("menuTop");
-		}
-		else{
-			$("#nav").removeClass("menuTop").addClass("menuNominal");
-		}
-		
-	});
-})
-</script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-9148278-45', 'bchain.es');
-  ga('send', 'pageview');
-
-</script>
 </head>
 
+
 <body>
+<script type="text/javascript">
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+$(document).ready(function(){
+  $("ul.menu a,a[href='#six']").click(function(){
+  
+    $('html, body').animate({
+      scrollTop: $($(this).attr("href")).offset().top - $("#nav").outerHeight(true) - $("#cabecera").height()
+    }, 1000);
+    //$("#nav").css("top",0);
+    $('#nav').animate({
+      top:0,
+      }, 500, function() {
+      $("#nav").removeClass("menuNominal").addClass("menuTop");
+      });
+    
 
-  ga('create', 'UA-9148278-41', 'eiel.es');
-  ga('send', 'pageview');
 
+  });
+  
+  $("#subir").click(function(){
+    $("#nav").removeClass("menuTop"); 
+
+    $('html, body').animate({
+      scrollTop:0
+    }, 1000,function(){
+    });
+  });
+  
+  $(window).bind('scroll',function(){ 
+    
+    if ($(window).scrollTop() > 453){
+      $("#nav").removeClass("menuNominal").addClass("menuTop");
+    }
+    else{
+      $("#nav").removeClass("menuTop").addClass("menuNominal");
+    }
+    
+  });
+})
 </script>
+
+
 <div id="cabecera">
 	<div class="container_12 cabecera">
-    	<div class=" grid_7 alpha logo">
-			<img src="images/logo_bchain_2013.png" width="470" height="108" alt="bchain business solution">
-        </div>
-        <div class=" grid_3  push_2 omega globo">
-        	Soy una distribuidora</br> <a href="mailto:info@geographica.gs" class="" title="quiero más información">y quiero más información</a>
-        </div>
+    <div class=" grid_7 alpha logo">
+			<img src="images/logo_bchain_2013.png" width="470" height="108" alt="bchain business solution"/>
+    </div>
+    <div class=" grid_3  push_2 omega globo">
+        	Soy una distribuidora<br/> 
+          <a href="mailto:info@geographica.gs" class="" title="quiero más información">quiero más información</a>
+    </div>
         </div>
     </div>
 <div id="header" class="">
@@ -129,10 +109,11 @@ $(document).ready(function(){
             
               	<h3 class="title_service">Se puede ajustar, moldear y cambiar</h3>
                 <h2 class="fontface shadow_w">Personalizable</h2>
-                <p><strong>bChain</strong> está formado por una parte privada y otra pública.</br>Es una solución personalizable, se puede ajustar, moldear</br>y cambiar según las necesidades de la distribuidora.</p><p>
-Su implantación es rápida ya sea en la nube o en una intranet.</p><p>Es fácil de usar ya sea por los comerciales, los técnicos,</br>el personal de almacén o los gestores.</p>
+                <p><strong>bChain</strong> está formado por una parte privada y otra pública.<br/>Es una solución personalizable, se puede ajustar, moldear<br/>y cambiar según las necesidades de la distribuidora.</p>
+                <p>
+Su implantación es rápida ya sea en la nube o en una intranet.</p><p>Es fácil de usar ya sea por los comerciales, los técnicos,<br/>el personal de almacén o los gestores.</p>
 
-<a href="http://www.geographica.gs/#!/es/proyectos/businesstobusiness-millennium" class="link_work" title="Millennium Distribuciones (B2B)"><span>Millennium Distribuciones (B2B)</span></a>
+<a href="http://www.millenniumdist.com" class="link_work" title="Millennium Distribuciones (B2B)"><span>Millennium Distribuciones (B2B)</span></a>
 <a class="btn" href="mailto:info@geographica.gs">Solicítanos información</a>
     
         </div>
@@ -175,7 +156,7 @@ Su implantación es rápida ya sea en la nube o en una intranet.</p><p>Es fácil
     	<div class="grid_6 c4">
               	<h3 class="title_service">crm incorporado</h3>
                 <h2 class="fontface">Gestión de los clientes</h2>
-                <p><strong>bChain</strong> tiene un pequeño y sencillo CRM incorporado,mediante el cual se gestionan las comunicaciones con los clientes y el envío de correos masivos de newsletter, que son creados y enviados en tres pasos</p>
+                <p><strong>bChain</strong> tiene un pequeño y sencillo CRM incorporado, mediante el cual se gestionan las comunicaciones con los clientes y el envío de correos masivos de newsletter, que son creados y enviados en tres pasos</p>
 
 <a class="btn" href="mailto:info@geographica.gs">Solicítanos información</a>
     
@@ -189,14 +170,14 @@ Su implantación es rápida ya sea en la nube o en una intranet.</p><p>Es fácil
 	<div class="story container_12">
     	<div class="bg"></div>
     	<div class="grid_6 float-right">
-              	<h3 class="title_service">gestiona los pedidos en cualquier momento/h3>
-                <h2 class="fontface shadow_w">Crea una web pública propia</br>y en pocos pasos</h2>
-                <p>La parte pública (para minoristas registrados) permite gestionarlos pedidos en cualquier momento del día y solicitar que se envíe la mercancía cuando les interese. Como no, podrán consultarlos pedidos ya facturados, descargar las facturas online y ver
+      	<h3 class="title_service">gestiona los pedidos en cualquier momento</h3>
+        <h2 class="fontface shadow_w">Crea una web pública propia<br/>y en pocos pasos</h2>
+        <p>La parte pública (para minoristas registrados) permite gestionar los pedidos en cualquier momento del día y solicitar que se envíe la mercancía cuando les interese. Como no, podrán consultar los pedidos ya facturados, descargar las facturas online y ver
 las estadísticas de compra.</p>
 
-<a class="btn" href="mailto:info@geographica.gs">Solicítanos información</a>
+        <a class="btn" href="mailto:info@geographica.gs">Solicítanos información</a>
     
-              </div>
+      </div>
     </div> <!--.story-->
 </div> <!--#sixth-->
 
@@ -222,10 +203,19 @@ las estadísticas de compra.</p>
         </div>
         <div class=" grid_3 omega alpha">
         	<p id="subir">Subir</p>
-        	<img class="logo_geographica" src="images/logo_geographica.png" width="220" height="152" alt="geographica"> </div>
+        	<img class="logo_geographica" src="images/logo_geographica.png" width="220" height="152" alt="geographica"/> 
+          </div>
   </div> <!--.story-->
 </div> <!--#six-->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-9148278-45', 'bchain.es');
+  ga('send', 'pageview');
 
+</script>
 </body>
 </html>
